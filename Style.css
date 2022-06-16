@@ -1,0 +1,32 @@
+﻿#P1 {
+    background-color: brown;
+    color: white;
+    height: 100px;
+}
+
+div {
+    background-color: blueviolet;
+    height: 50px;
+}
+
+.commonFont {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+#P2 {
+    background-color: chartreuse;
+    height: 40px;
+}
+
+
