@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        #d1{
+            height: 50px;
+            width: 170px;
+            background: yellow;
+            position:relative;
+
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <p>This is sample paragraph</p>
+    <input type="button" id="bnt1" value="Animate" />
+    <div id="d1"></div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.js"
+            integrity="sha256-bLjSmbMs5XYwqLIj5ppZFblCo0/9jfdiG/WjPhg52/M="
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#d1").animate({
+                    left: "100px",
+                    top: "50px",
+                    opacity: "0.5",
+                    height: "100px",
+                    width: "100px"
+                }, 3000).animate({
+                    left: "50px",
+                    top: "20px",
+                    opacity: "1",
+                    height: "50px",
+                    width: "50px"
+                }, 2000).slideUp(2000).slideDown(2000);
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+   
+    <title></title>
+</head>
+<body>
+    Enter a number:<input type="text" id="t1" /><br />
+    Enter a number:<input type="text" id="t2" /><br />
+    Result:<input type="text" id="t3" /><br />
+    <input type="button" id="bnt1" value="Addition" /><br />
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.js"
+            integrity="sha256-bLjSmbMs5XYwqLIj5ppZFblCo0/9jfdiG/WjPhg52/M="
+            crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            var a = $("#t1").val();
+            var b = $("#t2").val();
+            var c = parseInt(a) + parseInt(b);
+            $("#t3").val(c);
+            $("#t3").text("Addition is"+ c);
+            $("#t3").html("Addition is" + c);
+
+        })
+    });
+    </script>
+</body >
+</html >

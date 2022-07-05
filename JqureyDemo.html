@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    <style>
+        p{
+            height:50px;
+            width:170px;
+            background:yellow;
+        }
+    </style>
+ 
+</head>
+<body>
+    <p>This is sample paragraph</p>
+    <!--<input type="button" id="btn1" value="hide" />
+    <input type="button" id="btn2" value="show" />-->
+    <input type="button" id="btn1" value="slideUp" />
+    <input type="button" id="btn1" value="slideDown" />
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.js"
+            integrity="sha256-bLjSmbMs5XYwqLIj5ppZFblCo0/9jfdiG/WjPhg52/M="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            //$("#btn1").click(function () {
+            //    $("p").hide("bounce",2000);
+            //});
+            //$("#btn2").click(function () {
+            //    $("p").show("puff",2000);
+            //});
+
+
+            $("#btn1").click(function () {
+                $("p").slideUp(2000);
+            });
+
+            $("#btn2").click(function () {
+                $("p").slideDown(2000);
+            });
+        });
+    </script>
+
+</body>
+</html>
